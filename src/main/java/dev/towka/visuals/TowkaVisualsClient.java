@@ -127,7 +127,7 @@ public final class TowkaVisualsClient implements ClientModInitializer {
             y += 18;
         }
         if (TowkaVisualsConfig.INSTANCE.showFps) {
-            context.drawTextWithShadow(client.textRenderer, "FPS: " + MinecraftClient.getCurrentFps(), x, y, white);
+            context.drawTextWithShadow(client.textRenderer, "FPS: " + client.getCurrentFps(), x, y, white);
             y += 10;
         }
         if (TowkaVisualsConfig.INSTANCE.showPing && client.player != null && client.getNetworkHandler() != null) {
