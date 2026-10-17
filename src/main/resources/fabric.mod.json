@@ -1,0 +1,19 @@
+{
+  "schemaVersion": 1,
+  "id": "towkavisuals",
+  "version": "${version}",
+  "name": "TowkaVisuals",
+  "description": "Client-side visual module menu for Minecraft 1.21.4 Fabric. Press J.",
+  "authors": ["towka", "OpenAI"],
+  "environment": "client",
+  "entrypoints": {
+    "client": ["dev.towka.visuals.TowkaVisualsClient"]
+  },
+  "mixins": ["towkavisuals.mixins.json"],
+  "depends": {
+    "fabricloader": ">=0.16.10",
+    "minecraft": "=1.21.4",
+    "java": ">=21",
+    "fabric-api": "*"
+  }
+}
